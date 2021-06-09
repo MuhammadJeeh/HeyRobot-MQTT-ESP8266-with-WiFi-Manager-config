@@ -16,6 +16,7 @@ char pub_str[100];
 float getRandom();
 
 WiFiClient espClient;
+
 PubSubClient client(espClient);
 
 
@@ -184,6 +185,5 @@ float getRandom() {
  float val = analogRead(A0);
  float c = val * 285.0 / 1024.0;
  return c;
-  // put your main code here, to run repeatedly:
 
 }
